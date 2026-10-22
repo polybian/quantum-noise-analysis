@@ -21,8 +21,7 @@ quantum-noise-analysis/
 │   ├── 02_readout_mitigation.py# calibration matrix + matrix-inversion mitigation
 │   └── 03_noise_sweep.py       # Grover success vs depolarizing p (6 points)
 ├── docs/
-│   ├── architecture.md        # this file
-│   └── interview-answers.md
+│   └── architecture.md        # this file
 └── simplified-explanation.md  # plain-language guide (Spanish)
 ```
 
