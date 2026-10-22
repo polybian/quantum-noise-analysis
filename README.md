@@ -6,8 +6,6 @@ readout errors — applied to the Bell state and Grover's search. No
 hardware token needed: everything runs on the local simulator, seeded
 and reproducible.
 
-This is #18 in my portfolio and #4 in my quantum series
-(`quantum-circuits-implementation`, `bb84-qkd-implementation`).
 I love molecular engineering, and above all QUANTUM.
 Quantum engineering starts with measuring the machine: gate fidelities, readout matrices, and how
 fast noise erodes an algorithm's advantage.
@@ -53,7 +51,7 @@ These are **simulator noise models**, not real hardware runs.
 | Implementation | Prediction | Measured |
 |---------------|-----------|----------|
 | Ideal vs noisy Bell (4096 shots) | ideal 100% correlation; noisy degraded | ideal **100.00%**; noisy **90.28%** (9.72 points lost to depolarizing 1q=1%/2q=2% + 4–6% readout) — assertion passed |
-| Readout mitigation (8192 shots) | mitigation at least halves the readout error | raw error **9.50%** → mitigated **0.22%** (**42.4x** lower) — assertion passed |
+| Readout mitigation (8192 shots) | mitigation at least halves the readout error | raw error **9.50%** → mitigated **0.22%** (**42.4x** lower) — assertion passed. Scope note: this 42x comes from a **readout-error-only model** where the same calibration matrix is used to calibrate and to measure, so the correction is near-ideal. On real hardware, gate errors and drift shrink the gain substantially |
 | Noise sweep, Grover (2048 shots × 6) | success >90% at smallest p, decaying with p | p=0.001: **99.2%** · 0.005: **95.4%** · 0.01: **90.9%** · 0.02: **83.4%** · 0.03: **78.2%** · 0.05: **67.2%** — assertion passed |
 
 ## Why this matters (the one-paragraph version)
