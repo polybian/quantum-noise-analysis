@@ -6,7 +6,6 @@ readout errors — applied to the Bell state and Grover's search. No
 hardware token needed: everything runs on the local simulator, seeded
 and reproducible.
 
-I love molecular engineering, and above all QUANTUM.
 Quantum engineering starts with measuring the machine: gate fidelities, readout matrices, and how
 fast noise erodes an algorithm's advantage.
 
