@@ -64,7 +64,7 @@ implementations do it in a controlled, reproducible setting: models you
 can inspect, numbers you can regenerate, and a documented path to the
 real thing.
 
-## Honest scope
+## Scope and limits
 
 Modeled: depolarizing gate errors, readout bit-flips. **Not modeled:**
 T1/T2 decoherence, crosstalk, drift, leakage — real devices have all of
