@@ -19,7 +19,7 @@ son varios:
 - **Ruido de compuertas:** cada operación sale un poquito mal, como un
   cocinero que siempre echa un pelín más de sal.
 - **Ruido de lectura:** al final, cuando "miras" el resultado, a veces
-  lees mal el número — como confundir un 6 con un 8 en una receta
+  lees mal el número, como confundir un 6 con un 8 en una receta
   escrita a mano.
 
 Este proyecto no usa una computadora cuántica de verdad: usa un
@@ -51,7 +51,7 @@ En el proyecto: el error de lectura del estado de Bell baja a **menos
 de la mitad** después de corregir. La campana sigue imperfecta, pero
 ahora la entiendes.
 
-> ⚠️ Lo honesto: esto solo arregla el ruido de *lectura*. Si las
+> ⚠️ Ojo: esto solo arregla el ruido de *lectura*. Si las
 > compuertas salieron mal desde el principio, ninguna tablita lo salva.
 > Por eso el proyecto lo dice clarito en vez de esconderlo.
 
@@ -65,7 +65,7 @@ con seis niveles de ruido, del más suave al más fuerte, y anota cuántas
 veces encuentra la respuesta correcta:
 
 - Con poquita estática: casi 100% de aciertos. 🎯
-- Con mucha estática: los aciertos caen hacia 25% — que es lo mismo que
+- Con mucha estática: los aciertos caen hacia 25%, que es lo mismo que
   adivinar al azar. 🎲
 
 Esa curva lo dice todo: no basta con tener más qubits; si cada
@@ -75,13 +75,13 @@ qubits *más limpios*".
 
 ---
 
-## 🖥️ Capítulo 4: Simulación honesta
+## 🖥️ Capítulo 4: Lo que sí y lo que no
 
 Repito lo importante: **esto corre en un simulador**, con modelos de
 ruido realistas pero no calibrados contra ningún dispositivo real. Es
 como un simulador de vuelo: te enseña a volar, pero no es el cielo.
 
-El siguiente paso —el de verdad— es correr estos mismos circuitos en
+El siguiente paso (el de verdad) es correr estos mismos circuitos en
 hardware cuántico real (IBM presta acceso gratuito) y comparar: ¿el
 ruido medido se parece a mis modelos? Esa comparación es el trabajo
 real de un ingeniero cuántico.

@@ -1,5 +1,5 @@
 """
-03 — Noise sweep: how depolarizing noise erodes Grover's advantage.
+03 - Noise sweep: how depolarizing noise erodes Grover's advantage.
 
 Runs the 2-qubit Grover circuit (marked state |11>) under depolarizing
 gate noise at six error probabilities p from 0.001 to 0.05, and prints
@@ -74,7 +74,7 @@ def main() -> None:
     assert last < first, (
         f"Success did not decay: p={P_VALUES[0]} -> {first:.1%}, "
         f"p={P_VALUES[-1]} -> {last:.1%}")
-    print(f"OK — success holds at {first:.1%} for p={P_VALUES[0]} and falls "
+    print(f"OK - success holds at {first:.1%} for p={P_VALUES[0]} and falls "
           f"to {last:.1%} at p={P_VALUES[-1]}: noise erodes the speedup.")
 
 

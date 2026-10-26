@@ -1,5 +1,5 @@
 """
-02 — Readout-error mitigation on a noisy Bell state.
+02 - Readout-error mitigation on a noisy Bell state.
 
 Readout errors flip classical bits at measurement time, independent of
 the quantum computation itself. Because they are classical and stable,
@@ -17,7 +17,7 @@ rate at least in half.
 
 Noise model: readout error only, so any improvement is unambiguously
 attributable to mitigation. (Gate noise would leave a residual floor
-that readout mitigation cannot remove — noted, not hidden.)
+that readout mitigation cannot remove - noted, not hidden.)
 
 Run:
     python3 scripts/02_readout_mitigation.py [--shots 8192]
@@ -121,7 +121,7 @@ def main() -> None:
           f"({raw_err / max(mit_err, 1e-9):.1f}x lower)")
     assert mit_err < raw_err / 2, (
         f"Mitigation failed to halve the error: {raw_err:.3f} -> {mit_err:.3f}")
-    print("OK — measurement-error mitigation cut the readout error "
+    print("OK - measurement-error mitigation cut the readout error "
           "by more than half.")
 
 

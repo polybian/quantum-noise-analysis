@@ -1,5 +1,5 @@
 """
-01 — Ideal vs noisy: what quantum noise does to a Bell state.
+01 - Ideal vs noisy: what quantum noise does to a Bell state.
 
 Runs the same Bell-state circuit twice on Qiskit Aer:
   * ideal: noise-free simulator -> perfect 00/11 correlation.
@@ -87,7 +87,7 @@ def main() -> None:
     assert ideal_corr == 1.0, "Ideal simulator should correlate perfectly!"
     assert noisy_corr < 1.0, "Noise model had no effect?!"
     assert noisy_corr > 0.80, f"Noise unrealistically strong: {noisy_corr}"
-    print("OK — ideal correlation is 100%; the noise model degrades it, "
+    print("OK - ideal correlation is 100%; the noise model degrades it, "
           "as real hardware would.")
 
 
